@@ -1,0 +1,109 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to HyperDev!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center">
+        Mobile App Interface
+      </h1>
+    </header>
+    
+    <main>
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active first_slide">
+              <img id="background_image" src="https://cdn.hyperdev.com/us-east-1%3A130337e1-dc62-428c-a855-0c5c41ee6f6a%2Ffrance-wallpaper-25957-26641-hd-wallpapers.jpg" alt="Eiffel Tower Picture">
+              <h1>Travel around the world</h1>
+              <button>FLY AWAY</button>
+            </div>
+            <div class="item second_slide">
+              <h5 class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi finibus neque eget vulputate malesuada. 
+                  Sed placerat tempor odio et gravida. Maecenas dictum vehicula convallis. Quisque et massa efficitur, gravida odio non, interdum lacus. 
+                  Phasellus ex magna, lacinia vel risus et, maximus lobortis tortor. Nulla placerat pharetra ligula a auctor. Aliquam eu dictum mi, in iaculis nulla. 
+                  Nulla ullamcorper mollis magna non varius. 
+                  Praesent aliquam, quam ac varius sollicitudin, metus turpis fringilla libero, ut ultrices nulla est vulputate turpis.</h5>
+            </div>
+            <div class="item third_slide">
+              <h3>Comments (45)</h3>
+              <ul>
+                <li>
+                  <img src="http://place-hold.it/70">
+                  <h4>Ion Iliescu</h4>
+                  <p>Duis ex mauris, luctus in posuere ut, efficitur gravida justo. Cras vitae mauris ac ipsum feugiat ultricies eu eget nulla.</p>
+                </li>
+                <li>
+                  <img src="http://place-hold.it/70">
+                  <h4>Emil Constantinescu</h4>
+                  <p>Phasellus malesuada sed ante ut sollicitudin. Cras at justo aliquam nisl accumsan egestas.</p>
+                </li>
+                <li>
+                  <img src="http://place-hold.it/70">
+                  <h4>Traian Basescu</h4>
+                  <p> Donec semper justo pellentesque suscipit aliquam. Etiam sodales nulla purus, ut cursus purus interdum a.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+          <!-- Controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="buttons_group" role="group">
+          <button class="btn btn-primary btn-lg close_button">Close</button>
+          <button class="btn btn-primary btn-lg disabled comment">Comment!</button>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <a href="https://hyperdev.com">
+        Remix this in HyperDev
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
