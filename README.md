@@ -1,1 +1,1 @@
-Small F-E App
+Blog App Interface
